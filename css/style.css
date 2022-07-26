@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Overpass:wght@100&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(22, 20, 20);
+}
+
+div.row#vh {
+    min-height: 100%;
+    background-color: #fff5f5;
+}
+
+#bgImageOne {
+    background-image: url('../img/bg-pattern-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#bgImageGirl {
+    background-image: url('../img/hero-desktop.jpg');
+    background-size: 101%;
+    background-repeat: no-repeat;
+}
+
+div.text {
+    margin: 50px 0;
+}
+
+h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: rgb(22, 20, 20);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 12px;
+}
+
+span {
+    color: #c8afaf !important;
+    font-weight: 200 !important;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #948787;
+}
+
+input {
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #ded4d5;
+    background: transparent;
+}
+
+.value0 {
+    border: 1px solid rgb(242, 83, 83);
+}
+
+.inner {
+    min-height: 25px;
+    text-align: center;
+    color: rgb(242, 83, 83) !important;
+    margin-top: 10px;
+    animation: error 4s;
+}
+
+.error {
+    position: absolute;
+    top: 11px;
+    right: 115px;
+    animation: error 1s;
+}
+
+p.thanks {
+    margin: 0;
+}
+
+@keyframes error{
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+form {
+    height: 50px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    opacity: .4;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+div.form {
+    position: relative;
+    min-height: 15%;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right, #f8bfbf, #ee8c8c);
+    padding: 11px 40px;
+    border-radius: 30px;
+    border: none;
+    transition: .4s;
+}
+
+button:hover {
+    background: #ca6f6f;
+}
